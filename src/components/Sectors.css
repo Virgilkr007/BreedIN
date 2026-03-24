@@ -1,0 +1,66 @@
+.sectors {
+  background: var(--light);
+  color: var(--dark);
+  padding: 8rem 4rem;
+}
+
+.sectors-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.sectors-header h2 {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--dark);
+}
+
+.sectors-header p { color: #6b7280; margin-top: 0.8rem; font-weight: 300; }
+
+.sectors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sector-card {
+  background: white;
+  border-radius: 18px;
+  padding: 2rem;
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 2px 16px rgba(0,0,0,0.05);
+  transition: transform 0.25s, box-shadow 0.25s;
+  cursor: default;
+}
+
+.sector-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+}
+
+.sector-emoji { font-size: 2rem; margin-bottom: 1rem; display: block; }
+
+.sector-card h3 {
+  font-family: 'Syne', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 0.5rem;
+}
+
+.sector-card p { font-size: 0.82rem; color: #6b7280; line-height: 1.6; }
+
+.sector-pill {
+  margin-top: 1rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  padding: 0.25rem 0.7rem;
+  border-radius: 100px;
+  display: inline-block;
+  text-transform: uppercase;
+}
